@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="menu_item_search" type="id">menu_item_search</item>
+    <item name="menu_item_clear" type="id">menu_item_clear</item>
+    <item name="menu_item_toggle_polling" type="id">menu_item_toggle_polling</item>
+    <item name="gallery_item_imageView" type="id">gallery_item_imageView</item>
+    <item name="fragmentContainer" type="id">fragmentContainer</item>
+</resources>

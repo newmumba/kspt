@@ -5,31 +5,11 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
-import android.content.Intent;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
-
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.TimeoutException;
 
 
 public class Profile extends Activity
@@ -108,6 +88,7 @@ public class Profile extends Activity
         FragmentPlacePage fragmentPlacePage;
         FragmentMaps fragmentMaps;
         FragmentPlaceList fragmentPlaceList;
+        PhotoGalleryFragment photoGalleryFragment;
 
         Bundle args;
         ft = fragmentManager.beginTransaction();
@@ -133,11 +114,11 @@ public class Profile extends Activity
                 ft.commit();
                 break;
             case 3:
-                fragmentFriendsList = new FragmentFriendsList();
+                photoGalleryFragment = new PhotoGalleryFragment();
                 args = new Bundle();
                 args.putInt("2", 2);
-                fragmentFriendsList.setArguments(args);
-                ft.replace(R.id.container, fragmentFriendsList, "fragmentPlaceList");
+                photoGalleryFragment.setArguments(args);
+                ft.replace(R.id.container, photoGalleryFragment, "photoGalleryFragmenth");
                 //ft.addToBackStack(null);
                 ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
                 ft.commit();
