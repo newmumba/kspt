@@ -114,6 +114,16 @@ public class Profile extends Activity
                 ft.commit();
                 break;
             case 3:
+                fragmentFriendsList = new FragmentFriendsList();
+                args = new Bundle();
+                args.putInt("2", 2);
+                fragmentFriendsList.setArguments(args);
+                ft.replace(R.id.container, fragmentFriendsList, "fragmentFriendsList");
+                //ft.addToBackStack(null);
+                ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
+                ft.commit();
+                break;
+            case 4:
                 photoGalleryFragment = new PhotoGalleryFragment();
                 args = new Bundle();
                 args.putInt("2", 2);
@@ -123,7 +133,7 @@ public class Profile extends Activity
                 ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
                 ft.commit();
                 break;
-            case 4:
+            case 5:
                 //Intent intentMaps = new Intent(this, MapsActivity.class);
                 //startActivity(intentMaps);
                 fragmentMaps = new FragmentMaps();
@@ -135,7 +145,7 @@ public class Profile extends Activity
                 ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
                 ft.commit();
                 break;
-            case 5:
+            case 6:
                 fragmentPlaceList = new FragmentPlaceList();
                 args = new Bundle();
                 args.putInt("2", 2);
@@ -145,7 +155,7 @@ public class Profile extends Activity
                 ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
                 ft.commit();
                 break;
-            case 6:
+            case 7:
                 fragmentSettings = new FragmentSettings();
                 args = new Bundle();
                 args.putInt("2", 2);
@@ -155,7 +165,7 @@ public class Profile extends Activity
                 ft.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
                 ft.commit();
                 break;
-            case 7:
+            case 8:
                 fragmentAbout = new FragmentAbout();
                 args = new Bundle();
                 args.putInt("2", 2);

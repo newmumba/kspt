@@ -11,6 +11,7 @@
     <item>Мой профиль</item>
     <item>Мои сообщения</item>
     <item>Мои друзья</item>
+    <item>Галерея</item>
     <item>Карты</item>
     <item>Списки</item>
     <item>Настройки</item>
@@ -37,5 +38,9 @@
     </string-array>
     items_fragment
     <string name="title_activity_maps">Map</string>
+    <string name="stop_polling">stop_polling</string>
+    <string name="start_polling">start_polling</string>
+    <string name="new_pictures_title">new_pictures_title</string>
+    <string name="new_pictures_text">new_pictures_text</string>
 
 </resources>

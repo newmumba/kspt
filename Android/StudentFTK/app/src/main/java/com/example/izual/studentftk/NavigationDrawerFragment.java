@@ -110,6 +110,7 @@ public class NavigationDrawerFragment extends Fragment {
         String[] items = getResources().getStringArray(R.array.items);
         int [] img = {R.drawable.ic_slice_profile,
                 R.drawable.ic_slice_message,
+                R.drawable.ic_slice_friends,
                 R.drawable.ic_slice_gallery,
                 R.drawable.ic_slice_map,
                 R.drawable.ic_slice_list,
