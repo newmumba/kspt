@@ -1,7 +1,9 @@
 package com.example.izual.studentftk.Network.RequestBuilder;
 
 import com.example.izual.studentftk.Network.*;
-import com.example.izual.studentftk.Network.Request;
+//import com.example.izual.studentftk.Network.Request;
+import com.example.izual.studentftk.Network.RequestBuilder.Request;
+
 
 import java.net.URI;
 
